@@ -1,0 +1,28 @@
+Input: URL
+
+Output: example:
+1. If the file is given from local filesystem: 
+File is given from local filesystem
+HTTP/1.0 200 OK 
+Content-Length: 405 
+
+<the file itself – 405 bytes> 
+   Total response bytes: 442
+
+2. If the file is given from the server: 
+HTTP request = <http request> 
+LEN = 143 
+HTTP/1.0 200 OK 
+Content-Length: 405 
+
+<the file itself – 405 bytes>
+   Total response bytes: 442
+
+Compile the proxy1.c: gcc -Wall  proxy1.c –o proxy1
+
+Running the proxy1.c: ./proxy1 <URL>
+
+Remarks:
+- It is assumed that the protocol entered is correct and is of the http type (http://)
+- If the path ends in / we will lower it and treat the path as it is without the /
+- Use protocol HHTP 1.0
