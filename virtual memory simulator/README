@@ -1,0 +1,44 @@
+-------------------------Description-------------------------------------------------------------------
+Simulation is a written simulation in software for events and operations that take place in a real system (hardware or software).
+This exercise is a simulation of main memory management. You will be required to write two main functions:
+1) Write function to logical address () store
+2) Retrieve function from logical address () load.
+The main of the exercise will consist of a sequence of load and store commands according to the example at the end of the exercise. The memory mapping system in the exercise looks like
+In the drawing below, and assumes that there is a table of pages that maps the logical pages to the frames that are in the physical memory. If the process page is on
+The disk is then fault-pageed and the page is framed in memory. We assume a virtual hook memory of one program. Your simulation program
+Use the file that is the logical memory. In addition, there is a table of pages for this program, a physical memory to which the pages are brought and a space that will pass to which they will be evacuated.
+From the main memory pages that have changed.
+
+functions:
+init_system - This method that initializes all the parameters
+returnEmptyAddress - This method return the index of the empty address or -1 if all the address were fulled
+putIntoMainMemoty - This method puts into main memory
+putInSwap -  This method put in the swap
+ifDirty - This method check if is dirty or not (has undergone changes or not)
+load - his function aims to ensure that the page corresponding to the address does indeed sit in the main memory and then the physical address in the memory must be accessed and the character returned
+Sitting at this address
+store - This function aims to make sure that the page corresponding to the address does sit in the main memory and then access the physical address and store the value character in the address
+this
+print_memory - This function will print the contents of the main memory
+
+load and store ant print memory are primary, all the rest are auxiliary methods
+
+
+-------------------------Program Files-------------------------------------------------------------------
+mem_sim.c
+README
+
+
+-------------------------How to compile?-------------------------------------------------------------------
+gcc main.c mem_sim.c –o app
+running:
+.\app
+
+
+-------------------------Input-------------------------------------------------------------------
+Store and load operations
+
+
+
+-------------------------Output-------------------------------------------------------------------
+Printing the main memory
